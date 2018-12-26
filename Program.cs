@@ -27,7 +27,7 @@ namespace ConsoleApp9
             String[] partialWords = s.Split(' ');
             String[] fullWords = t.Split(' ');
             List<string> missingWords = new List<string>();
-            List<string> actualmissingWords = new List<string>();
+           
             for (int i = 0; i < fullWords.Length; i++)
             {
                 if (!partialWords.Contains(fullWords[i]))
