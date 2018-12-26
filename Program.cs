@@ -10,10 +10,10 @@ namespace ConsoleApp9
     {
         public static void Main(string[] args)
         {
-            string t = "I am using hackerrank to improve programming";
-            string s = "am hackerrank to improve";
+            string full = "I am using hackerrank to improve programming";
+            string partial = "am hackerrank to improve";
             List<string> answer = new List<string>();
-            answer = missingwords(t, s);
+            answer = missingwords(full, partial);
             for (int i = 0; i < answer.Count; i++)
             {
                 Console.WriteLine(answer[i]);
@@ -21,11 +21,11 @@ namespace ConsoleApp9
             Console.ReadLine();
 
         }
-        public static List<String> missingwords(String t, String s)
+        public static List<String> missingwords(String full, String partial)
         {
 
-            String[] partialWords = s.Split(' ');
-            String[] fullWords = t.Split(' ');
+            String[] partialWords = partial.Split(' ');
+            String[] fullWords = full.Split(' ');
             List<string> missingWords = new List<string>();
            
             for (int i = 0; i < fullWords.Length; i++)
